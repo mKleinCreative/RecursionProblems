@@ -8,11 +8,6 @@
  * factorial(5) => 120 // 5 * 4 * 3 * 2 * 1 => 120
  */
 
-const factorialAnswer = n => {
-  if (n === 1) return 1
-  return n * factorial(n - 1)
-}
-
 const factorial = n => {
   //TODO
 }
@@ -30,11 +25,6 @@ const factorial = n => {
  * digitalRoot(75) => 3
  */
 
-const digitalRootAnswer = num => {
-  let numArray = num.toString().split("").map( n => parseInt(n) )
-  if (numArray.length === 1) return num
-  return digitalRoot(numArray[0] + numArray[1])
-}
 const digitalRoot = num => {
   //TODO
 }
@@ -49,12 +39,6 @@ const digitalRoot = num => {
  * sumTo(9) => 45
  * sumTo(-8) => null
  */
-
-const sumToAnswer = n => {
-  if ( n < 1 ) return null
-  if ( n === 1 ) return n
-  return n + sumTo(n - 1)
-}
 
 const sumTo = n => {
  //TODO
@@ -72,13 +56,6 @@ const sumTo = n => {
  *  nFibonacci(4) => [1, 1, 2, 3]
  */
 
-const nFibonacciAnswer = (n, memo = [1])=> {
-  if (n === memo.length) return memo;
-  if (memo.length === 1) memo.push(1);
-  else memo.push(memo[memo.length - 1] + memo[memo.length - 2]);
-  return nFibonacci(n, memo);
-}
-
 const nFibonacci = ( n )=> {
 }
 
@@ -93,12 +70,6 @@ const nFibonacci = ( n )=> {
  * Note that every array(and sub array(s)) that the function returns should be different
  * from the original
  */
-
-const deepCopyAnswer = array => {
-  if (!Array.isArray(array)) return array
-  var newArray
-  return newArray = JSON.parse(JSON.stringify(array))
-}
 
 const deepCopy = array => {
   // TODO
